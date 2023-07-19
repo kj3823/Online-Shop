@@ -6,14 +6,12 @@ const fs = require('fs');
 const path = require('path');
 const PDFDocument = require('pdfkit');
 const nodemon = require('nodemon');
-const stripe = require('stripe')('sk_test_51MKKDTHhTlf8IFP5zSewvDnADfYmTbb5cxQM9gBGFhRCGcPDjCQZhAOeFqqOttlVCCc36M5xvTyjMl4cJwFL347Y008IFU4xlo')
-//private API key
 
 const ITEMS_PER_PAGE = 2;
 
 exports.getProducts = (req, res, next) => { // The default path for use is '/'.
     //res.sendFile(path.join(rootDir,'views','shop.html')) // The path method creates the correct path to our file. 
-    // The ../ is added to go up on level, since the __dirname will actuall go into the routes folder, but the views folder is located one level up.
+    // The ../ is added to go up on level, since the __dirname will actually go into the routes folder, but the views folder is located one level up.
     //const products = adminData.products // getting the array of products. 
     // Product.fetchAll((product)=>
     // {
