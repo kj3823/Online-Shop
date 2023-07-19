@@ -21,7 +21,7 @@ Before running the application, ensure you have the following prerequisites inst
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/online-shop-nodejs.git
+git clone https://https://github.com/kj3823/Online-Shop.git
 ```
 2. Navigate to the project directory:
 ```
