@@ -34,7 +34,7 @@ const multer = require('multer');
 
 const MongoDBStore = require('connect-mongodb-session')(session) //session object passed to the function
 
-const MONGODB_URI = "mongodb+srv://jjink3823:5lZcBVolSZRMiGv2@cluster0.s0o5toi.mongodb.net/shop?authMechanism=SCRAM-SHA-1";
+const MONGODB_URI =;
 
 const fileStorage = multer.diskStorage({
     destination: (req, file, callback) => { //callback once we are done
