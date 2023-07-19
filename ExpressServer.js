@@ -167,21 +167,6 @@ app.use((err, req, res, next) => { //error handling middleware, contains 4 param
 
 mongoose.connect(MONGODB_URI)
     .then(result => {
-        //console.log(result);
-        // User.findOne() // returns first document
-        //     .then(user => {
-        //         if (!user) // if user is undefined (no user exists)
-        //         {
-        //             const newuser = new User({
-        //                 name: "Kevin",
-        //                 email: "kevin@email.com",
-        //                 cart: {
-        //                     items: []
-        //                 }
-        //             })
-        //             newuser.save();
-        //         }
-        //     });
         console.log("Connected to MongoDB");
         app.listen(3000);
     }) // callback being passed, (function to be executed) when the connection is successful.
