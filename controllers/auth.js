@@ -8,24 +8,6 @@ const {
     validationResult
 } = require('express-validator')
 
-// const transporter = nodemailer.createTransport(sendgridTransport({
-//     auth: {
-//         api_user: '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'
-//     }
-// }));
-
-const transporter = nodemailer.createTransport({
-    host: 'smtp.mail.yahoo.com',
-    port: 465,
-    service: 'yahoo',
-    secure: false,
-    auth: {
-        user: 'kevinjoseph3823@yahoo.com',
-        pass: 'whrahhpwmgybagsy',
-        debug: false,
-        logger: true
-    }
-})
 
 exports.getLogin = (req, res, next) => {
     // const isLoggedIn = req.get('Cookie') // retireves all cookies
